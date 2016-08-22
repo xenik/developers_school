@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+
+}
+
+.layout-positioner {
+  width: 954px;
+  margin: 0 auto;
+}
+
+#header {
+  height: 176px;
+  background: url(images/header-background.png) no-repeat center bottom;
+}
+
+.logo {
+  position: absolute;
+  background-color: rgb(104, 185, 5);
+  width: 234px;
+  height: 60px;
+}
+
+.login-panel {
+  position: relative;
+  left: 240px;
+  width: 234px;
+  height: 60px;
+  background-color: rgb(51, 95, 68);
+}
+
+.nav {
+  padding: 0;
+  margin: 6px 0 0 0;
+  list-style: none;
+}
+
+.nav li {
+  display: inline-block;
+  margin-right: 2px;
+}
+
+.nav li:last-child {
+  margin-right: 0;
+}
+
+.nav li a {
+  width: 114px;
+  height: 28px;
+  display: block;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(104, 185, 5);
+}
+
