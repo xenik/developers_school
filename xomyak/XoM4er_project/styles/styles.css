@@ -7,15 +7,15 @@ body {
 
 }
 
-.layout-positioner {
-  width: 954px;
-  margin: 0 auto;
-}
+  .layout-positioner {
+    width: 954px;
+    margin: 0 auto;
+  }
 
-#header {
-  height: 176px;
-  background: url(images/header-background.png) no-repeat center bottom;
-}
+    #header {
+      height: 176px;
+      background: url(images/header-background.png) no-repeat center bottom;
+    }
 
 .logo {
   position: absolute;
