@@ -13,15 +13,16 @@ body {
   }
 
     #header {
-      height: 176px;
-      background: url(images/header-background.png) no-repeat center bottom;
+      height: 186px;
+      background: url(images/header-background.png) no-repeat center top;
     }
 
 .logo {
   position: absolute;
   background-color: rgb(104, 185, 5);
-  width: 234px;
-  height: 60px;
+  padding: 10px 32px;
+  width: 170px;
+  height: 40px;
 }
 
 .login-panel {
@@ -33,26 +34,126 @@ body {
 }
 
 .nav {
-  padding: 0;
-  margin: 6px 0 0 0;
+  width: 954px;
+  display: inline-flex;
   list-style: none;
+  margin: 6px 0 0 0;
+  padding: 0;
+  justify-content: space-between;
 }
 
-.nav li {
-  display: inline-block;
-  margin-right: 2px;
-}
-
-.nav li:last-child {
-  margin-right: 0;
-}
-
-.nav li a {
-  width: 114px;
-  height: 28px;
+.nav a {
   display: block;
+  padding: 4px 0;
+  width: 114px;
+  height: 20px;
+  text-align: center;
+  font-size: 16px;
   text-decoration: none;
   color: white;
+
+}
+
+.nav .buttom {
   background-color: rgb(104, 185, 5);
 }
 
+.nav a:hover {
+  background-color: #004F1F;
+}
+
+.background-1 {
+  margin-top: 4px;
+  height: 78px;
+  background: url(images/background-1.png) no-repeat left;
+}
+
+  .background-2 {
+    position: relative;
+    top: -27px;
+    left: 682px;
+    width: 272px;
+    height: 35px;
+    background: url(images/background-2.png) no-repeat right;
+  }
+
+  #logo-truth {
+    padding-top: 12px;
+    padding-left: 41px;
+  }
+
+    #truth {
+      display: inline-block;
+      width: 348px;
+      height: 33px;
+      background: url(images/truth.png) no-repeat;
+    }
+
+    #yes {
+      display: inline-block;
+      width: 65px;
+      height: 36px;
+      background: url(images/yes.png) no-repeat;
+    }
+
+    #slogan {
+      color: white;
+      font-size: 16px;
+    }
+
+  #search-panel {
+  width: 105px;
+
+  /* кнопку отправки будем позиционировать абсолютно,
+  ** поэтому необходимо это свойство */
+  position: relative;
+}
+
+#search-panel input {
+  /* отключаем бордюры у инпутов */
+  border: none;
+}
+
+/* стили для поля ввода */
+#search-panel .input {
+  /* растягиваем поле ввода на всю ширину формы */
+  width: 105px;
+
+  /* за счет верхнего (8px) и нижнего (9px) внутренних отступов
+  ** регулируем высоту формы
+  ** внутренний отступ справа (37px) делаем больше левого,
+  ** т.к. там будет размещена кнопка отправки */
+  padding: 8px 37px 9px 15px;
+
+  /* чтобы ширина поля ввода (100%) включала в себя внутренние отступы */
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #EEE;
+  font: 13px Tahoma, Arial, sans-serif;
+  color: #555;
+  outline: none;
+}
+
+
+/* оформляем кнопку отправки */
+#search-panel .submit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background: url(images/search-icon.png) no-repeat;
+  opacity: 0.5;
+}
+
+/* данное свойство необходимо для того, чтобы в браузерах
+** Chrome и Safari можно было стилизовать инпуты */
+input[type="search"] {
+  -webkit-appearance: none;
+}
+
+
+.shadow {
+  height: 10px;
+  background: url(images/shadow-bottom.png) no-repeat left bottom;
+}
