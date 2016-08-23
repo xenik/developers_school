@@ -1,8 +1,16 @@
+body {
+  background-color: #F0E4B8;
+}
+
+.wrapper {
+width: 952px;
+height: 100%;
+}
+
 .header {
-  background-color: #E19E9E;
+  background-color: #004000;
   width: 952px;
   height: 174px;
-  position: absolute;
 }
 
 .conteiner1 {
@@ -15,6 +23,51 @@
   background-color: #005F40;
   width: 234px;
   height: 58px;
-  position: absolute;
-  left: 234px;
+  left: 240px;
+  top: 0;
+}
+
+.cont1 {
+  background-color: #00BA00;
+  color: #EAEAEA;
+  text-align: center;
+  width: 114px;
+  height: 28px;
+  float: left;
+  margin-right: 6px;
+  margin-top:
+}
+
+.anons {
+  background-color: #FFFFFF;
+  width: 896px;
+  height: 74px;
+  margin: 0 auto;
+  margin-top: 76px;
+}
+
+.karus1 {
+  width: 194px;
+  height: 148px;
+  border: 1px solid black;
+  float: left;
+  margin-left: 39px;
+}
+
+.karus11 {
+  width: 194px;
+  height: 148px;
+  border: 1px solid black;
+  float: left;
+  margin-left: 26px;
+}
+
+#karuselZagolovok {
+  margin-left: 26px;
+}
+
+.comment {
+  background-color: #FFFFFF;
+  width: 896px;
+  height: 250px;
 }
