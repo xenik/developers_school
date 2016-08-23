@@ -1,8 +1,9 @@
 body {
-  background-color: #ADB2B8;
+  width: 0;
+  height: 0;
 }
 
-.top_fon {
+#wrapper {
 background-image: url(images/back_pic.png);
 background-repeat: repeat;
 width: 1261px;
@@ -12,5 +13,9 @@ margin: 0 auto;
 
 .header {
 
+}
+
+.headpic {
+  text-align: center;
 
 }
