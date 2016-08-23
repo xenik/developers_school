@@ -1,13 +1,20 @@
 .header {
   background-color: #E19E9E;
-  width: 200px;
-  height: 300px;
-  border: 2px solid black;
+  width: 952px;
+  height: 174px;
+  position: absolute;
 }
 
-.conteiner {
-  background-color: #498AF9;
-  width: 100px;
-  height: 200px;1
-  border: 2px solid black;
+.conteiner1 {
+  background-color: #00BA00;
+  width: 234px;
+  height: 58px;1
+}
+
+.conteiner2 {
+  background-color: #005F40;
+  width: 234px;
+  height: 58px;
+  position: absolute;
+  left: 234px;
 }
