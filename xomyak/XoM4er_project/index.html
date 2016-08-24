@@ -1,57 +1,163 @@
-<!doctype html>
-  <head>
-    <meta charset="utf-8">
-    <title>Dr.Web</title>
-    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
-    <link rel="stylesheet" type="text/css" href="styles/styles.css">
-  </head>
-  <body>
-    <div id="wrapper">
-      <div class="layout-positioner">
-        <div id="header">
-          <div class="top-menu">
-            <div class="logo">
-              <img id="logo" src="images/logo.png" alt="Logo">
-            </div>
-            <div class="login-panel">
-              <div class="reg">
-                <img src="images/panel-profile.png" alt="">
-              </div>
-              <div class="login">
-                <img src="images/reg.png" alt="Регистрация">
-              </div>
-            </div>
-            <div class="nav">
-              <a href="#main">Главная</a>
-              <a class="buttom" href="#issues">Выпуски</a>
-              <a class="buttom" href="#rubrics">Рубрики</a>
-              <a class="buttom" href="#rating">Рейтинг</a>
-              <a class="buttom" href="#about">О проекте</a>
-              <a class="buttom" href="#statistic">Статистика</a>
-              <a class="buttom" href="#choosing">Избранное (5)</a>
-              <a class="buttom" href="#instruments">Инструменты</a>
-            </div>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <title>Dr.Web</title>
+</head>
+<body>
+
+  <div id="wrapper">
+    <div class="layout-positioner">
+    <div id="header">
+      <div id="header-top">
+        <div id="logo">
+          <img src="images/logo.png">
+        </div><!--end logo-->
+        <div id="login-panel">
+          <div id="login">
+            <a href="#"><img src="images/"><span>Вход на сайт</span><img src=""></a>
+          </div><!--end login-->
+          <div id="registration">
+            <a href="#"><img src="images/"><span>Регистрация</span></a>
+          </div><!--end registration-->
+        </div><!--end login-panel-->
+        <ul id="navigation">
+          <li><a href="#">Главная</a></li>
+          <li><a class="button" href="#">Выпуски</a></li>
+          <li><a class="button" href="#">Рубрики</a></li>
+          <li><a class="button" href="#">Рейтинг</a></li>
+          <li><a class="button" href="#">О проекте</a></li>
+          <li><a class="button" href="#">Статистика</a></li>
+          <li><a class="button" href="#">Избранное (5)</a></li>
+          <li><a class="button" href="#">Инструменты</a></li>
+        </ul><!--end navigation-->
+      </div><!--end header-top-->
+      <div id="header-center">
+        <div id="slogan">
+          <div id="truth">
+            <img src="images/truth.png" alt="Антивирусная правда">
           </div>
-          <div class="header-bottom">
-            <div class="background-1">
-              <div id="logo-truth">
-                <div id="truth"></div>
-                <div id="yes"></div>
-                <div id="slogan">Кругозор без горизонтов</div>
-              </div>
-              <form action="#">
-                <div id="search-panel">
-                  <input type="search" name="" placeholder="поиск" class="input">
-                  <input type="submit" name="" value="">
-                </div>
-              </form>
-              <div class="background-2">
-                <div></div>
-              </div>
-            </div>
-            <div class="shadow"></div>
+          <p>Кругозор без горизонтов</p>
+        </div><!--end slogan-->
+        <div id="right-panel">
+          <form id="search">
+            <input type="search">
+            <input type="submit">
+          </form><!--end search-->
+          <ul id="site-bar">
+            <li><a href="#"><img src=""></a></li>
+            <li><a href="#"><img src=""></a></li>
+            <li><a href="#"><img src=""></a></li>
+            <li><a href="#"><img src="images/share-bar.png"></a></li>
+            <li><a href="#"><img src="images/comments-bar.png"></a></li>
+          </ul><!--end site-bar-->
+        </div><!--end right-panel-->
+        <div class="clearfix"></div>
+      </div><!--end header-center-->
+     <div id="header-bottom">
+        <p>Чтобы получить доступ к сервисам проекта, <a href="#">войдите на сайт</a> через аккаунт. Если у вас еще нет аккаунта, его можно <a href="#">создать</a>.</p>
+        <ul id="language">
+          <li><a href="#">RU</a></li>
+          <li><a href="#">EN</a></li>
+          <li><a href="#">DE</a></li>
+          <li><a href="#">FR</a></li>
+          <li><a href="#">CN</a></li>
+          <li><a href="#">PL</a></li>
+          <li><a href="#">UA</a></li>
+          <li><a href="#">JP</a></li>
+        </ul><!--end language-->
+      </div><!--end header-bottom-->
+      </div><!--end header-->
+      </div><!--end layout-positioner-->
+    <div class="layout-positioner">
+    <div id="content">
+      <div id="announcement">
+        <h2>Анонс следующего выпуска</h2>
+        <table>
+          <tr>
+            <td class="soon">СКОРО!</td>
+            <td><img src=""></td>
+            <td>Уязвимые</td>
+            <td>
+              <p>04.09.2015</p>
+              <h2>Не все дыры одинаково полезны</h2>
+            </td>
+          </tr>
+        </table>
+      </div><!--end announcement-->
+      <div id="roundabout">
+        <h2>Опубликованные выпуски</h2>
+        <div class="release">
+          <div class="name">
+            <img src=""><span>Трояны</span>
           </div>
-        </div>
-      </div>
-    </div>
-  </body>
+          <div class="contents">
+            <p>04.09.2015</p>
+            <h3>Платить ли выкуп вымогателям? Вот в чем вопрос!</h3>
+            <a class="read" href="#">Читать</a>
+          </div>
+        </div><!--end release-->
+        <div class="release">
+          <div class="name">
+            <img src=""><span>Трояны</span>
+          </div>
+          <div class="contents">
+            <p>04.09.2015</p>
+            <h3>Платить ли выкуп вымогателям? Вот в чем вопрос!</h3>
+            <a class="read" href="#">Читать</a>
+          </div>
+        </div><!--end release-->
+        <div class="release">
+          <div class="name">
+            <img src=""><span>Уязвимые</span>
+          </div>
+          <div class="contents">
+            <p>03.05.2015</p>
+            <h3>Не все дыры одинаково полезны</h3>
+            <a class="read" href="#">Читать</a>
+          </div>
+        </div><!--end release-->
+        <div class="release">
+          <div class="name">
+            <img src=""><span>Трояны</span>
+          </div>
+          <div class="contents">
+            <p>04.09.2015</p>
+            <h3>Платить ли выкуп вымогателям? Вот в чем вопрос!</h3>
+            <a class="read" href="#">Читать</a>
+          </div>
+        </div><!--end release-->
+      </div><!--end roundabout-->
+      <div id="comments">
+        <h2>Комментарии к выпускам</h2>
+
+
+      </div><!--end comments-->
+      <div id="bonuses">
+        <div class="heading">
+          <h2>Читайте и зарабатывайте Dr.Web-ки</h2>
+          <p>Возможность доступна только для владельцев аккаунтов на сайте "Доктор Веб"</p>
+        </div><!--end heading-->
+        <div class="block">
+          <p>1 000 Dr.Web-ок</p>
+          <ul>
+            <li>За комментирование 100 выпусков <bold>подряд в день публикации</bold></li>
+            <li>За оценку 100 выпусков <bold>подряд в день публикации</bold></li>
+          </ul>
+        </div><!--end block-->
+        <div class="block">
+          <p>100 Dr.Web-ок</p>
+          <ul>
+            <li>За комментирование 100 любых выпусков</li>
+            <li>За оценку 100 любых выпусков</li>
+          </ul>
+        </div><!--end block-->
+      </div><!--end bonuses-->
+    </div><!--end content-->
+    </div><!--end layout-positioner-->
+  </div><!--end wrapper-->
+
+</body>
+</html>
