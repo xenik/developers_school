@@ -1,0 +1,97 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+	width: 1200px;
+	height: 2000px;
+	margin: 0 auto;
+	background-color: #C0C7CF;
+}
+
+#header {
+	width: 800px;
+	height: 160px;
+	background-color: #295717;
+	margin: 0 auto;
+}
+
+#logo {
+	width: 192px;
+	height: 60px;
+	background-color: #68B905;
+	float:left;
+}
+
+#login {
+	width: 192px;
+	height: 60px;
+	background-color: #335F44;
+	margin-left: 200px;
+}
+
+#nav1 {
+	width: 98px;
+	height: 30px;
+	background-color: #335F44;
+	float: left;
+	margin-left: 2px;
+	margin-top: 5px;
+}
+
+#nav3 {
+	width: 98px;
+	height: 30px;
+	background-color: #335F44;
+	float: left;
+	margin-top: 5px;
+}
+
+.Zagolovok {
+	color: #FFFFFF;
+	font-size: 32px;
+}
+
+.Zagolovok2 {
+	color: #BFEB8C;
+	font-size: 38px;
+}
+
+span {
+	color: #FFFFFF;
+}
+
+#t_1 {
+	text-align: center;
+	margin-top: 20px;
+}
+
+#wrapper #content_1 {
+	width: 760px;
+	height: 120px;
+	background-color: #DBE2EA;
+	margin: 30px auto;
+}
+
+#content1_1 {
+	width: 30px;
+	height: 120px;
+	background-color: #D94076;
+	float: left;	
+}
+
+#content1_2 {
+	width: 200px;
+	height: 120px;
+	background-color: #D94076;
+	margin-left: 50px;	
+}
+
+#content_2 {
+	width: 760px;
+	height: 240px;
+	background-color: #DBE2EA;
+	margin: 30px auto;
+}
