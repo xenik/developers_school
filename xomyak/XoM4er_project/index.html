@@ -17,11 +17,18 @@
         </div><!--end logo-->
         <div id="login-panel">
           <div id="login">
-            <a href="#"><img src="images/"><span>Вход на сайт</span><img src=""></a>
+            <div id="profile-icon"><img src="images/panel-profile.png">
+            </div>
+            <div><a href="#">Вход на сайт <img src="images/arrow.png"></a>
+            </div>
           </div><!--end login-->
           <div id="registration">
-            <a href="#"><img src="images/"><span>Регистрация</span></a>
+            <div><img src="images/reg.png">
+            </div>
+            <div><a href="#">Регистрация</a>
+            </div>
           </div><!--end registration-->
+          <div class="clearfix"></div>
         </div><!--end login-panel-->
         <ul id="navigation">
           <li><a href="#">Главная</a></li>
@@ -42,24 +49,28 @@
           <p>Кругозор без горизонтов</p>
         </div><!--end slogan-->
         <div id="right-panel">
-          <form id="search">
-            <input type="search">
-            <input type="submit">
+          <form>
+          <div id="search">
+            <input type="search" placeholder="Поиск" name="search">
+            <button type="submit" value="Поиск">
+          </div>
           </form><!--end search-->
           <ul id="site-bar">
-            <li><a href="#"><img src=""></a></li>
-            <li><a href="#"><img src=""></a></li>
-            <li><a href="#"><img src=""></a></li>
+            <li><a href="#"><img src="images/message-bar.png"></a></li>
+            <li><a href="#"><img src="images/rss-bar.png"></a></li>
+            <li><a href="#"><img src="images/phone-bar.png"></a></li>
             <li><a href="#"><img src="images/share-bar.png"></a></li>
             <li><a href="#"><img src="images/comments-bar.png"></a></li>
           </ul><!--end site-bar-->
         </div><!--end right-panel-->
         <div class="clearfix"></div>
       </div><!--end header-center-->
-     <div id="header-bottom">
+      <div id="header-bottom">
         <p>Чтобы получить доступ к сервисам проекта, <a href="#">войдите на сайт</a> через аккаунт. Если у вас еще нет аккаунта, его можно <a href="#">создать</a>.</p>
-        <ul id="language">
-          <li><a href="#">RU</a></li>
+        <ul class="language">
+          <li class="language-top">
+          <a class="language-top" href="#">RU</a>
+          <ul class="language-inside">
           <li><a href="#">EN</a></li>
           <li><a href="#">DE</a></li>
           <li><a href="#">FR</a></li>
@@ -67,30 +78,53 @@
           <li><a href="#">PL</a></li>
           <li><a href="#">UA</a></li>
           <li><a href="#">JP</a></li>
-        </ul><!--end language-->
+          </ul><!--end language-->
+          </li>
       </div><!--end header-bottom-->
       </div><!--end header-->
       </div><!--end layout-positioner-->
     <div class="layout-positioner">
     <div id="content">
       <div id="announcement">
-        <h2>Анонс следующего выпуска</h2>
-        <table>
-          <tr>
-            <td class="soon">СКОРО!</td>
-            <td><img src=""></td>
-            <td>Уязвимые</td>
-            <td>
-              <p>04.09.2015</p>
-              <h2>Не все дыры одинаково полезны</h2>
-            </td>
-          </tr>
-        </table>
+        <div class="heading"><strong>Анонс следующего выпуска</strong></div>
+        <div class="columns">
+          <div class="column-1">
+            <!--<p>СКОРО!</p>-->
+          </div>
+            <div class="column-2">
+              <img class="icon" src="images/monitor-1.png">
+              <div class="name"><strong>Уязвимые</strong></div>
+              <div class="clearfix"></div>
+            </div>
+          <div class="column-3">
+            <div class="date">04.09.2015</div>
+            <div class="text"><strong>Не все дыры одинаково полезны</strong></div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div>
+          <img class="shadow-1" src="images/shadow-2.png" alt="">
+        </div>
       </div><!--end announcement-->
       <div id="roundabout">
-        <h2>Опубликованные выпуски</h2>
-        <div class="release">
-          <div class="name">
+      <div class=heading><strong>Опубликованные выпуски</strong>
+      </div>
+        <div class="release release-1">
+          <div class="name trojan">
+            <img class="icon-2" src="images/horse.png">
+            <div class="text-1">Трояны</div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="contents">
+            <div class="date-1">04.09.2015</div>
+            <div class="text-2">
+            Платить ли выкуп вымогателям? Вот в чем вопрос!
+            </div>
+            <a class="read" href="#">Читать</a>
+          </div>
+        </div><!--end release-->
+        <div class="release release-2">
+          <div class="name trojan">
             <img src=""><span>Трояны</span>
           </div>
           <div class="contents">
@@ -99,17 +133,7 @@
             <a class="read" href="#">Читать</a>
           </div>
         </div><!--end release-->
-        <div class="release">
-          <div class="name">
-            <img src=""><span>Трояны</span>
-          </div>
-          <div class="contents">
-            <p>04.09.2015</p>
-            <h3>Платить ли выкуп вымогателям? Вот в чем вопрос!</h3>
-            <a class="read" href="#">Читать</a>
-          </div>
-        </div><!--end release-->
-        <div class="release">
+        <div class="release release-3">
           <div class="name">
             <img src=""><span>Уязвимые</span>
           </div>
@@ -119,9 +143,10 @@
             <a class="read" href="#">Читать</a>
           </div>
         </div><!--end release-->
-        <div class="release">
-          <div class="name">
-            <img src=""><span>Трояны</span>
+        <div class="release release-4">
+          <div class="name trojan">
+            <img class="icon-2" src="images/monitor-2.png">
+            <div>Трояны</div>
           </div>
           <div class="contents">
             <p>04.09.2015</p>
@@ -129,6 +154,7 @@
             <a class="read" href="#">Читать</a>
           </div>
         </div><!--end release-->
+        <div class="clearfix"></div>
       </div><!--end roundabout-->
       <div id="comments">
         <h2>Комментарии к выпускам</h2>
