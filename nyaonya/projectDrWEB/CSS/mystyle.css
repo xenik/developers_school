@@ -51,23 +51,15 @@
 	height: 74px;
 	background-color: #F93E78;
 	margin-left: 27px;
+	float: left;
 }
 
-#VectorSmart {
-	margin-top: 20px;
-	margin-left: 20px;
+#anons_data_text {
+	width: 700px;
+	height: 74px;
+	border: 1px solid black;
 }
 
-#bloc_text1 {
-	height: 20px;
-	width: 800px;
-	margin: 10px auto;
-}
-
-#anons_data {
-	font-family: arial;
-	font-size: 13px;
-}
 
 ul.hr {
     margin: 0; /* Обнуляем значение отступов */
@@ -191,21 +183,21 @@ ul.hr {
 #bloc1_bod1 {
 	width: 476px;
 	height: 114px;
-	background-color: #00C27E;
+	background-color: #A0A0A0;
 	float: left;
 }
 
 #bloc1_bod2 {
 	width: 476px;
 	height: 114px;
-	background-color: #00C27E;
+	background-color: #A0A0A0;
 	float: right;
 }
 
 #bloc1_bod3 {
 	width: 476px;
 	height: 159px;
-	background-color: #00C27E;
+	background-color: #A0A0A0;
 	margin-top: 2px;
 	float: left;
 }
@@ -213,7 +205,7 @@ ul.hr {
 #bloc1_bod4 {
 	width: 476px;
 	height: 159px;
-	background-color: #00C27E;
+	background-color: #A0A0A0;
 	margin-top: 2px;
 	float: right;
 }
@@ -233,6 +225,39 @@ ul.hr {
 	background-color: #D5D5D5;
 }
 
+#bloc2_bod1 {
+	width: 206px;
+	height: 422px;
+	background-color: #A0A0A0;
+	float: left;
+	margin-left: 28px;
+}
+
+#bloc2_bod2 {
+	width: 206px;
+	height: 422px;
+	background-color: #A0A0A0;
+	float: left;
+	margin-left: 20px;
+}
+
+#bloc2_bod3 {
+	width: 444px;
+	height: 160px;
+	background-color: #A0A0A0;
+	float: left;
+	margin-left: 20px;
+}
+
+#bloc2_bod4 {
+	width: 444px;
+	height: 160px;
+	background-color: #858585;
+	float: left;
+	margin-left: 20px;
+}
+
+/*Блок Информеры*/
 #bloc3 {
 	width: 954px;
 	height: 135px;
@@ -240,6 +265,7 @@ ul.hr {
 	background-color: #FFFFFF;
 }
 
+/*Блок Трофеи*/
 #bloc4 {
 	width: 954px;
 	height: 660px;
@@ -247,9 +273,77 @@ ul.hr {
 	background-color: #FFFFFF;
 }
 
+#bloc4_head {
+	width: 954px;
+	height: 69px;
+	margin: 0px auto;
+	background-color: #50C200;
+}
+
+#bloc4_bod1 {
+	width: 476px;
+	height: 180px;
+	background-color: #A0A0A0;
+	float: left;
+}
+
+#bloc4_bod2 {
+	width: 476px;
+	height: 180px;
+	background-color: #A0A0A0;
+	float: right;
+}
+
+#bloc4_bod3 {
+	width: 476px;
+	height: 180px;
+	background-color: #A0A0A0;
+	float: left;
+	margin-top: 2px;
+}
+
+#bloc4_bod4 {
+	width: 476px;
+	height: 180px;
+	background-color: #A0A0A0;
+	float: right;
+	margin-top: 2px;
+}
+
+#bloc4_bod5 {
+	width: 476px;
+	height: 180px;
+	background-color: #A0A0A0;
+	float: left;
+	margin-top: 2px;
+}
+
+#bloc4_bod6 {
+	width: 476px;
+	height: 180px;
+	background-color: #A0A0A0;
+	float: right;
+	margin-top: 2px;
+}
+
+/*FOOTER*/
 #footer {
 	width: 954px;
-	height: 300px;
+	height: 200px;
 	margin: 22px auto;
 	background-color: #FFFFFF;
+}
+
+#footer_logo {
+	width: 100px;
+	height: 200px;
+	border: 1px solid black;
+	float: left;
+}
+
+#footer_text {
+	width: 854px;
+	height: 200px;
+	border: 1px solid black;
+	float: right;
 }
