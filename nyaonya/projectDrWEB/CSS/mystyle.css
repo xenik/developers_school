@@ -94,6 +94,15 @@ ul.hr {
 	margin: 50px auto;
 }
 
+#kar_zag {
+	font-size: 16px;
+	font-family: arial;
+	font-weight: bold;
+	display: block;
+	width: 300px;
+	height: 20px;
+}
+
 #kar_1 {
 	width: 194px;
 	height: 149px;
@@ -113,6 +122,13 @@ ul.hr {
 #ks_img1 {
 	margin-left: 58px;
 	margin-top: 5px;
+}
+
+#kar1_text {
+	width: 194px;
+	height: 107px;
+	border: 1px solid black;
+	float: left;
 }
 
 #kar_2 {
@@ -136,6 +152,13 @@ ul.hr {
 	margin-top: 5px;
 }
 
+#kar2_text {
+	width: 194px;
+	height: 107px;
+	border: 1px solid black;
+	float: left;
+}
+
 #kar_3 {
 	width: 194px;
 	height: 149px;
@@ -157,6 +180,13 @@ ul.hr {
 	margin-top: 8px;
 }
 
+#kar3_text {
+	width: 194px;
+	height: 107px;
+	border: 1px solid black;
+	float: left;
+}
+
 #kar_4 {
 	width: 194px;
 	height: 149px;
@@ -169,7 +199,6 @@ ul.hr {
 	height: 42px;
 	background-color: #FF9918;
 	float: left;
-	margin-right: 40px;
 }
 
 #ks_img4 {
@@ -178,11 +207,13 @@ ul.hr {
 }
 
 #kar4_text {
-
+	width: 194px;
+	height: 107px;
+	border: 1px solid black;
+	float: left;
 }
 
 .kar_data {
-	margin-top: 50px;
 	font-size: 12px;
 	text-align: center;
 	font-family: arial;
@@ -201,9 +232,6 @@ ul.hr {
 	font-family: arial
 	font-weight: bold;
 	color: #858585;
-	display: block;
-	margin-left: 74px;
-	margin-top: 20px;
 }
 
 /*К блоку Комментарии */
