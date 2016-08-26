@@ -8,7 +8,7 @@
 	width: 1258px;
 	height: 3300px;
 	margin: 0 auto;
-	background-color: #C0C7CF;
+	background-image: url(../images/BG.png);
 }
 
 #header {
@@ -31,7 +31,7 @@
 	background-color: #335F44;
 	margin-left: 200px;
 }
-
+/* Блок Анонс следующего выпуска */
 #content_1 {
 	width: 896px;
 	height: 74px;
@@ -57,9 +57,14 @@
 #anons_data_text {
 	width: 700px;
 	height: 74px;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
+	margin-left: 198px;
 }
 
+#anons_logo {
+	margin-top: 20px;
+  margin-left: 20px;
+}
 
 ul.hr {
     margin: 0; /* Обнуляем значение отступов */
