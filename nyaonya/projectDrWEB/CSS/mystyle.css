@@ -177,6 +177,35 @@ ul.hr {
 	margin-top: 5px;
 }
 
+#kar4_text {
+
+}
+
+.kar_data {
+	margin-top: 50px;
+	font-size: 12px;
+	text-align: center;
+	font-family: arial;
+	font-weight: italic;
+}
+
+.kar_text {
+	font-size: 13px;
+	text-align: center;
+	font-family: arial;
+	font-weight: bold;
+}
+
+.kar_link {
+	font-size: 13px;
+	font-family: arial
+	font-weight: bold;
+	color: #858585;
+	display: block;
+	margin-left: 74px;
+	margin-top: 20px;
+}
+
 /*К блоку Комментарии */
 #comments {
 	width: 896px;
