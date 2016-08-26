@@ -86,17 +86,18 @@ ul.hr {
    	margin-right:0;
    }
 
+/*Блок Карусель*/
 #karusel {
 	width: 896px;
 	height: 167px;
-	background-color: #FFFFFF;
+	/*background-color: #FFFFFF;*/
 	margin: 50px auto;
 }
 
 #kar_1 {
 	width: 194px;
 	height: 149px;
-	background-color: #FF809D;
+	background-color: #FFFFFF;
 	float: left;
 	margin-right: 40px;
 }
@@ -104,15 +105,20 @@ ul.hr {
 #kar_1_shapka {
 	width: 194px;
 	height: 42px;
-	background-color: yellow;
+	background-color: #FF9918;
 	float: left;
 	margin-right: 40px;
+}
+
+#ks_img1 {
+	margin-left: 58px;
+	margin-top: 5px;
 }
 
 #kar_2 {
 	width: 194px;
 	height: 149px;
-	background-color: #FF809D;
+	background-color: #FFFFFF;
 	float: left;
 	margin-right: 40px;
 }
@@ -120,15 +126,20 @@ ul.hr {
 #kar_2_shapka {
 	width: 194px;
 	height: 42px;
-	background-color: yellow;
+	background-color: #FF9918;
 	float: left;
 	margin-right: 40px;
+}
+
+#ks_img2 {
+	margin-left: 58px;
+	margin-top: 5px;
 }
 
 #kar_3 {
 	width: 194px;
 	height: 149px;
-	background-color: #FF809D;
+	background-color: #FFFFFF;
 	float: left;
 	margin-right: 40px;
 }
@@ -136,24 +147,34 @@ ul.hr {
 #kar_3_shapka {
 	width: 194px;
 	height: 42px;
-	background-color: yellow;
+	background-color: #F93E78;
 	float: left;
 	margin-right: 40px;
+}
+
+#ks_img3 {
+	margin-left: 44px;
+	margin-top: 8px;
 }
 
 #kar_4 {
 	width: 194px;
 	height: 149px;
-	background-color: #FF809D;
+	background-color: #FFFFFF;
 	float: left;
 }
 
 #kar_4_shapka {
 	width: 194px;
 	height: 42px;
-	background-color: yellow;
+	background-color: #FF9918;
 	float: left;
 	margin-right: 40px;
+}
+
+#ks_img4 {
+	margin-left: 58px;
+	margin-top: 5px;
 }
 
 /*К блоку Комментарии */
