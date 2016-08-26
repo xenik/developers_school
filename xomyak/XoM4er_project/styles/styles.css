@@ -258,6 +258,16 @@ body {
         background-color: #D84076;
       }
 
+      #soon {
+        position: relative;
+        top: 29px;
+        left: -18px;
+        width: 60px;
+        height: 16px;
+        transform: rotate(-90deg);
+        color: white;
+      }
+
       .columns .column-2 {
         height: 74px;
         width: 166px;
@@ -314,14 +324,36 @@ body {
         background-color: #FB982D;
       }
 
+      .release .vulnerable {
+        background-color: #D84076;
+      }
+
       #roundabout .release {
         float: left;
       }
+
+       #roundabout .release-1 {
+        margin: 0 39px 0 27px;
+       }
+
+       #roundabout .release-2 {
+        margin: 0 47px 0 0;
+       }
+
+       #roundabout .release-3 {
+        margin: 0 39px 0 0;
+       }
 
       .release .icon-2 {
         float: left;
         display: block;
         margin: 6px 0 0 46px;
+      }
+
+      .release .icon-3 {
+        float: left;
+        display: block;
+        margin: 7px 0 0 42px;
       }
 
       .release .text-1 {
@@ -331,26 +363,273 @@ body {
       }
 
       .release .contents {
+        padding: 12px 0 12px 0;
         width: 193px;
-        height: 107px;
+        height: 83px;
       }
 
       .release .date-1 {
-        margin: 12px auto 3px auto;
+        text-align: center;
+        font-size: 12px;
       }
 
-      /*#roundabout .release-2 {
+      .release .text-2 {
+        min-height: 45px;
+        font-size: 12px;
+        text-align: center;
+        margin: 3px 0 13px 0;
+      }
+
+      .release .read {
+        display: block;
+        text-align: center;
+        font-size: 12px;
+        color: #676767;
+      }
+
+      .release .shadow-2 {
+        display: block;
+      }
+
+    #comments {
+      width: 896px;
+      margin: 20px auto;
+      background-color: white;
+      } 
+
+    #comments .heading {
+      font-size: 16px;
+
+    }
+
+    #comments .content {
+      margin-top: 13px;
+      padding-top: 21px;
+      height: 229px;
+    }
+
+      #comments .comment {
+        min-height: 65px;
+      }
+
+      .comment .column-1 {
+        width: 76px;
         float: left;
       }
 
-      /*#roundabout .release-3 {
+        .comment .date-2 {
+          margin-left: 21px;
+          width: 39px; 
+          height: 16px;
+          font-size: 12px;
+          padding-top: 3px;
+          text-align: center; 
+          background-color: #5A7CAC;
+          color: white;
+        }
+      
+      .comment .column-2 {
         float: left;
       }
 
-      #roundabout .release-4 {
-        float: right;
+      .column-2 .text-3 a {
+        font-size: 12px;
+        color: black;
       }
 
+      .column-2 .text-4 a.post {
+        font-size: 12px;
+        color: #747474;
+      }
+
+      .column-2 .text-4 a.user {
+        font-size: 12px;
+        color: #387850;
+      }
+
+      .all-comments {
+        margin-left: 76px;
+      }
+
+      .all-comments a{        
+        display: block;
+        font-size: 12px;
+        color: #387850;
+      }
+
+      .shadow-comments {
+        display: block;
+      }
+
+      #bonuses .top {
+        padding: 16px 0 0 29px;
+        height: 54px;
+        background-color: #7EC115;
+      }
+
+      #bonuses .top p.heading {
+        margin: 0;
+        font-size: 16px;
+      }
+
+      #bonuses .top p.comment {
+        margin: 7px 0 0 0;
+        font-size: 12px;
+      }
+
+      #bonuses .content {
+        height: 275px;
+        background-color: white;
+        background: url(images/background-bonuses.png) no-repeat center 4px;
+      }
+
+      #bonuses .bonus-1,
+      #bonuses .bonus-2 {
+        padding: 22px 50px 0 28px;
+      }
+
+      #bonuses .bonus-1 {
+        height: 92px;
+      }
+    
+      .bonus li {
+        font-size: 12px;
+      }
+
+      .bonus ul {
+        padding-left: 15px;
+        margin: 15px 0 0 0;
+      }
+
+      #bonuses .content p.heading {
+        margin: 0;
+      }
+
+      #bonuses .column-1 {
+        width: 477px;
+        float: left;
+      }
+
+      .bonus .heading span.unit {
+        font-weight: bold;
+        font-size: 18px; 
+        color: #399F1B;
+      }
+
+      .bonus .heading span.number {
+        font-weight: bold;
+        font-size: 22px;
+        color: #399F1B;
+      }
+
+      .bonus .line {
+        display: block;
+        margin-top: 18px;
+      }
+
+      .bonus p.note {
+        font-size: 12px;
+        color: #9D9D9D;
+        margin: 7px 0 0 0;
+      }
+
+
+      #bonuses .column-2 {
+        width: 477px;
+        float: left;
+      }
+
+      #bonuses .bonus-3,
+      #bonuses .bonus-4 {
+        padding: 22px 50px 0 38px;
+      }
+
+      #bonuses .bonus-3 {
+        height: 92px;
+      }
+
+  #graphic {
+    height: 507px;
+    background-color: white;
+  }
+
+    #graphic .top {
+      height: 63px;
+      padding: 22px 0 0 28px;
+    }
+
+      #graphic .top p.heading {
+        margin: 0;
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      #graphic .top p.comment {
+        margin: 18px 0 0 0;
+        font-size: 12px;
+      }
+
+    #graphic .content .column-1 {
+      float: left;
+      width: 206px;
+      margin-left: 28px;
+    }
+
+      #graphic .content .column p.size {
+        margin-top: 16px;
+        text-align: center;
+        font-size: 12px;
+        font-weight: bold;
+      }
+
+      #graphic .content .column a.link {
+        display: block;
+        margin-top: 13px;
+        text-align: center;
+        font-size: 12px;
+        color: #397951;
+      }
+
+    #graphic .content .column-2 {
+      float: left;
+      width: 206px;
+      margin-left: 20px;
+    }
+
+    #graphic .content .column-3 {
+      float: left;
+      width: 444px;
+      margin-left: 20px;
+    }
+
+      #graphic .content .column-3 .bunner-4 {
+        margin-top: 49px;
+      }
+
+  #informers {
+    height: 135px;
+    background-color: white;
+    padding-left: 28px;
+  }
+
+    #informers p.heading {
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    #informers p.content {
+      font-size: 12px;
+    }
+
+    #informers a.link {
+      display: block;
+      font-size: 12px;
+      color: #397951;
+    } 
+
+  #trophies {
+    height: 660px;
+  }
 
 
 
