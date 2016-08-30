@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.clear {
+	clear: both;
 }
 
 #wrapper {
@@ -31,12 +36,19 @@
 	background-color: #335F44;
 	margin-left: 200px;
 }
+
+#bloc_text1 {
+	width: 896px;
+	height: 74px;
+	margin: 10px auto;
+}
+
 /* Блок Анонс следующего выпуска */
 #content_1 {
 	width: 896px;
 	height: 74px;
 	background-color: #FFFFFF;
-	margin: 30px auto;
+	margin: 0px auto;
 }
 
 #content1_1 {
@@ -246,16 +258,16 @@ ul.hr {
 /*К блоку Комментарии */
 #comments {
 	width: 896px;
-	height: 284px;
 	margin: 0px auto;
-	background-color: #D0FF00;
+	background-color: #8B8B8B;
 }
 
-#com_content {
-	width: 896px;
-	height: 250px;
-	background-color: #FFFFFF;
+#content {
+	height: 229px;
+	min-height: 65px;
 }
+
+
 
 /*Блок Читайте и Зарабатывайте*/
 #bloc1 {
@@ -350,11 +362,11 @@ ul.hr {
 }
 
 /*Блок Информеры*/
-#bloc3 {
+#informers {
 	width: 954px;
-	height: 135px;
+	height: 114px;
 	margin: 21px auto;
-	background-color: #FFFFFF;
+	background-color: #9D9D9D;
 }
 
 /*Блок Трофеи*/
@@ -377,6 +389,23 @@ ul.hr {
 	height: 180px;
 	background-color: #A0A0A0;
 	float: left;
+}
+
+.bloc4_bod1_pic1 {
+	float: left;
+	margin: 33px 0 0 30px;
+}
+
+.bloc4_bod1_name1 {
+	float: left;
+	font-size: 12px;
+	margin: 80px 0 0 10px;
+}
+
+.bloc4_bod1_text1 {
+	font-size: 12px;
+	float: left;
+	margin: 65px 0 0 30px;
 }
 
 #bloc4_bod2 {
