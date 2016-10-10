@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script src="mountains.js"></script>
+	<style>
+		/* Определяет стили для красивых таблиц */
+		table { border-collapse: collapse; }
+		td, th { border: 1px solid black; padding: 3px 8px; }
+		th { text-align: left; }
+	</style>
+</head>
+<body>
+
+<!-- Упражнение 1 Строим таблицу
+
+Напишите функцию buildTable, которая, принимая массив
+объектов с одинаковыми свойствами, строит структуру
+DOM, представляющую таблицу. У таблицы должна быть
+строка с заголовками, где имена свойств обёрнуты в
+элементы <th> , и должно быть по одной строчке на
+объект из массива, где его свойства обёрнуты в элементы
+<td> . Здесь пригодится функция Object.keys,
+возвращающая массив, содержащий имена свойств
+объекта.
+Когда вы разберётесь с основами, выровняйте ячейки с
+числами по правому краю, изменив их свойство
+style.textAlign на «right».-->
+
+	<script>
+		function buildTable(data) {
+			var table = document.createElement("table");
+
+			var fields = Object.keys(data[0]);
+			var topRow = document.createElement("tr");
+			fields.forEach(function(field) {
+				var topCell = document.createElement("th");
+				topCell.textContent = field;
+				topRow.appendChild(topCell);
+			});
+			table.appendChild(topRow);
+
+			data.forEach(function(object) {
+				var row = document.createElement("tr");
+				fields.forEach(function(field) {
+					var cell = document.createElement("td");
+					cell.textContent = object[field];
+					if (typeof object[field] == "number") {
+						cell.style.textAlign = "right";
+					};
+					row.appendChild(cell)
+				});
+				table.appendChild(row);
+			});
+			return table;
+		}
+		document.body.appendChild(buildTable(MOUNTAINS));
+	</script>
+
+<!--Упражнение 2 Элементы по имени тегов
+
+Метод getElementsByTagName возвращает все дочерние
+элементы с заданным именем тега. Сделайте свою
+версию этого метода в виде обычной функции, которая
+принимает узел и строчку (имя тега) и возвращает
+массив, содержащий все нисходящие узлы с заданным
+именем тега.
+Чтобы выяснить имя тега элемента, используйте
+свойство tagName. Заметьте, что оно возвратит имя тега
+в верхнем регистре. Используйте методы строк
+toLowerCase или toUpperCase.-->
+
+
+	<h1>Заголовок с элементом <span>span</span> внутри.</h1>
+	<p>Параграф с <span>раз</span>, <span>два</span> элементами span.</p>
+
+
+	<script>
+		function byTagName(node, tagName) {
+			var array = [];
+			tagName = tagName.toUpperCase();
+
+			function check(node) {
+				for (var i = 0; i < node.childNodes.length; i++) {
+					var child = node.childNodes[i];
+					if (child.nodeType == document.ELEMENT_NODE) {
+						if (child.nodeName == tagName)
+							array.push(child);
+						check(child);
+					};					
+				};
+			};
+			check(node);
+			return array
+		}
+
+		console.log(byTagName(document.body, "h1").length);
+
+		console.log(byTagName(document.body, "span").length);
+			
+		var para = document.querySelector("p");
+		console.log(byTagName(para, "span").length);
+
+</script>
+
+<!--Упражнение 3 Шляпа кота
+
+Расширьте анимацию кота, чтобы и кот и его шляпа <img
+src="img/hat.png"> летали по противоположным сторонам
+эллипса.
+Или пусть шляпа летает вокруг кота. Или ещё что-нибудь
+интересное придумайте.
+Чтобы упростить расположение множества объектов,
+неплохо будет переключиться на абсолютное
+позиционирование. Тогда top и left будут считаться
+относительно левого верхнего угла документа. Чтобы не
+использовать отрицательные координаты, вы можете
+добавить заданное число пикселей к значениям position.-->
+
+	<p style="height: 1000px">
+		<img class="sun" src="images/sun.png" style="position: absolute; top: 600px; left: 600px">
+		<img class="earth" src="images/earth.png" style="position: absolute">		
+		<img class="moon" src="images/moon.png" style="position: absolute">
+	</p>
+	<script>
+		var earth = document.querySelector(".earth");
+		var moon = document.querySelector(".moon");
+		var angle = 0, lastTime = null, angleMoon = 0;
+		function animate(time) {
+			if (lastTime != null)
+				angle += (time - lastTime) * 0.001;
+				angleMoon += (time - lastTime) * 0.0005;
+			lastTime = time;
+			earth.style.top = ((Math.sin(angle) * 300) + 625) + "px";
+			earth.style.left = ((Math.cos(angle) * 400) + 525) + "px";
+			moon.style.top = (((Math.sin(-angleMoon) * 100) + 25) + ((Math.sin(angle) * 300) + 625)) + "px";
+			moon.style.left = (((Math.cos(-angleMoon) * 100) + 25) + ((Math.cos(angle) * 400) + 525)) + "px";
+			requestAnimationFrame(animate);
+		}
+		requestAnimationFrame(animate);
+	</script>
+
+</body>
+</html>
