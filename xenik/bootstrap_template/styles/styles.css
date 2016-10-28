@@ -1,0 +1,48 @@
+.header {
+  min-height: 20px;
+  background-color: #C4C4C4;
+  margin-top: 10px;
+}
+
+.logo {
+  min-height: 40px;
+  background-color: #909497;
+  margin-top: 20px;
+}
+
+.menu {
+  margin-top: 20px;
+  min-height: 20px;
+  background-color: #C4C3C6;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.cell {
+  min-height: 80px;
+  background-color: #D0D0D0;
+}
+
+.cell:hover {
+  background-color: #1CC801;
+}
+
+.description {
+  margin-top: 20px;
+  min-height: 40px;
+  background-color: #BABABA;
+}
+
+.columns {
+  margin-top: 20px;
+  min-height: 60px;
+  background-color: #BABABA;
+}
+
+.footer {
+  margin-top: 20px;
+  min-height: 60px;
+  background-color: #1CC801;
+}
