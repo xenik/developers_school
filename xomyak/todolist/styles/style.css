@@ -1,0 +1,43 @@
+.wrapper {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: silver;
+}
+
+#header {
+	padding-top: 20px;
+	height: 85px;
+	background-color: #7CB0E1; 
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.list {
+	min-height: 100px;
+	background-color: #E8FFFF;
+	border-radius: 10px; 
+}
+
+#active {
+	display: none;
+}
+
+#complete {
+	display: none;
+}
+
+.menu {
+	margin-top: 10px;
+}
+
+p {
+	padding: 5px 15px;
+	font-size: 15px;
+	background-color: skyblue;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.content-task {
+	min-height: 40px;
+}
